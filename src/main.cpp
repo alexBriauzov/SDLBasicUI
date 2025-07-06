@@ -50,6 +50,8 @@ void update(){
 	
 	UIElement::tagetedElement = e;
 
+
+	// go through all the mouse/keyboard events SDL has picked up
 	SDL_Event ev;
 
 	while (SDL_PollEvent(&ev)){
