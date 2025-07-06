@@ -37,7 +37,7 @@ void update(){
 	int newMouseX; int newMouseY;
 	SDL_GetMouseState(&newMouseX,&newMouseY);
 
-
+	// check if the cursor is pointing at some UI element on this frame
 	UIElement* e = getUIElementAtXY(newMouseX, newMouseY);
 
 	if(UIElement::tagetedElement != e && UIElement::tagetedElement != NULL && UIElement::tagetedElement->onExit != NULL){
